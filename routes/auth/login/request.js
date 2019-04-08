@@ -12,7 +12,8 @@ const route = router => {
       // AND set config.mockValidateUserEnabled to false
       const options = {
         method: 'POST',
-        url: `${req.php}/mock-validate-user`,
+        // url: `${req.php}/mock-validate-user`,
+        url: `${config.upstream}/login`,
         body: {
           username: req.body.username,
           password: req.body.password

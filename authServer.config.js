@@ -11,7 +11,7 @@ const config = {
     expiresIn: 86400, // 24 hours
     secret: 'FLEDFRINTSTONE'
   },
-  mockValidateUserEnabled: true,
+  mockValidateUserEnabled: false,
   nockHost: 'localhost',
   timeout: {
     upstream: 9000
