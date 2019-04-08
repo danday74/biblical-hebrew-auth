@@ -1,7 +1,7 @@
 const testRun = process.env.NODE_ENV === 'test'
 
 const config = {
-  corsOptions: {origin: ['http://localhost:4000']},
+  corsOptions: {origin: ['http://localhost:4000', 'http://localhost:5000']},
   logging: !testRun,
   // certDir: '/etc/ssl/letsencrypt',
   httpPort: (testRun) ? 5001 : /* istanbul ignore next */ 4001,
