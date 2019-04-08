@@ -8,9 +8,9 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:51108/login",
+			"name": "http://localhost:4001/login",
 			"request": {
-				"url": "http://localhost:51108/login",
+				"url": "http://localhost:4001/login",
 				"method": "POST",
 				"header": [
 					{
@@ -28,9 +28,9 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:51108/authenticated",
+			"name": "http://localhost:4001/authenticated",
 			"request": {
-				"url": "http://localhost:51108/authenticated",
+				"url": "http://localhost:4001/authenticated",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -39,9 +39,9 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:51108/logout",
+			"name": "http://localhost:4001/logout",
 			"request": {
-				"url": "http://localhost:51108/logout",
+				"url": "http://localhost:4001/logout",
 				"method": "POST",
 				"header": [],
 				"body": {},
@@ -50,9 +50,9 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:51108/mock-validate-user",
+			"name": "http://localhost:4001/mock-validate-user",
 			"request": {
-				"url": "http://localhost:51108/mock-validate-user",
+				"url": "http://localhost:4001/mock-validate-user",
 				"method": "POST",
 				"header": [
 					{
@@ -70,9 +70,9 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:51108/whoami",
+			"name": "http://localhost:4001/whoami",
 			"request": {
-				"url": "http://localhost:51108/whoami",
+				"url": "http://localhost:4001/whoami",
 				"method": "GET",
 				"header": [],
 				"body": {},

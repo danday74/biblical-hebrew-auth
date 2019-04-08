@@ -3,7 +3,7 @@ const testRun = process.env.NODE_ENV === 'test'
 const config = {
   logging: !testRun,
   // certDir: '/etc/ssl/letsencrypt',
-  httpPort: (testRun) ? 41108 : /* istanbul ignore next */ 51108,
+  httpPort: (testRun) ? 5001 : /* istanbul ignore next */ 4001,
   // httpsPort: (testRun) ? 41109 : /* istanbul ignore next */ 51109,
   jwt: {
     cookieName: 'twj',
@@ -15,7 +15,7 @@ const config = {
   timeout: {
     upstream: 9000
   },
-  upstream: 'http://localhost:2020'
+  upstream: 'http://localhost:4002'
 }
 
 module.exports = config
