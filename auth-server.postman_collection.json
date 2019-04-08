@@ -1,82 +1,132 @@
 {
-	"variables": [],
 	"info": {
+		"_postman_id": "ada67d14-82a7-4449-a75b-a97221177ec1",
 		"name": "auth-server",
-		"_postman_id": "4a77837c-8bb0-ddfc-5c24-b1bb9135a50d",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "http://localhost:4001/login",
 			"request": {
-				"url": "http://localhost:4001/login",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\": \"alexxx\",\n  \"password\": \"alexxx100\"\n}\n"
+					"raw": "{\n  \"username\": \"Guest\",\n  \"password\": \"test\"\n}\n"
 				},
-				"description": ""
+				"url": {
+					"raw": "http://localhost:4001/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"login"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "http://localhost:4001/authenticated",
 			"request": {
-				"url": "http://localhost:4001/authenticated",
 				"method": "GET",
 				"header": [],
-				"body": {},
-				"description": ""
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4001/authenticated",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"authenticated"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "http://localhost:4001/logout",
 			"request": {
-				"url": "http://localhost:4001/logout",
 				"method": "POST",
 				"header": [],
-				"body": {},
-				"description": ""
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4001/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"logout"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "http://localhost:4001/mock-validate-user",
 			"request": {
-				"url": "http://localhost:4001/mock-validate-user",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\": \"alexxx\",\n  \"password\": \"alexxx100\"\n}\n"
+					"raw": "{\n  \"username\": \"Guest\",\n  \"password\": \"test\"\n}\n"
 				},
-				"description": ""
+				"url": {
+					"raw": "http://localhost:4001/mock-validate-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"mock-validate-user"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "http://localhost:4001/whoami",
 			"request": {
-				"url": "http://localhost:4001/whoami",
 				"method": "GET",
 				"header": [],
-				"body": {},
-				"description": ""
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4001/whoami",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"whoami"
+					]
+				}
 			},
 			"response": []
 		}
