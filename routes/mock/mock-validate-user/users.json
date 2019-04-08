@@ -1,7 +1,8 @@
 [
   {
-    "slug": "guest",
     "username": "Guest",
-    "password": "test"
+    "password": "test",
+    "email": "guest@gmail.com",
+    "admin": true
   }
 ]
