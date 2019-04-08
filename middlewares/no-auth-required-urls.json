@@ -1,0 +1,14 @@
+[
+  {
+    "url": "/login",
+    "method": "POST"
+  },
+  {
+    "url": "/questions-questions-requested",
+    "method": "GET"
+  },
+  {
+    "url": "/user-exists/",
+    "method": "HEAD"
+  }
+]
