@@ -1,11 +1,12 @@
+const {cloneDeep} = require('lodash')
+
 const getRestrictedUser = user => {
-  // const properties = ['username', 'email']
-  // return Object.keys(user)
-  //   .filter(key => properties.includes(key))
-  //   .reduce((obj, key) => {
-  //     obj[key] = user[key]
-  //     return obj
-  //   }, {})
+
+  user = cloneDeep(user)
+  delete user.exp
+  delete user.iat
+  delete user.password
+
   return user
 }
 

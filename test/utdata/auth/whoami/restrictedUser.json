@@ -1,4 +1,5 @@
 {
   "username": "Guest",
-  "email": "guest@gmail.com"
+  "email": "guest@gmail.com",
+  "admin": true
 }
