@@ -3,8 +3,8 @@ const validate = require('express-validation')
 
 const validator = {
   body: { // params, body, query, headers, cookies
-    username: Joi.string().alphanum().min(6).max(25).required(),
-    password: Joi.string().alphanum().min(6).max(25).required()
+    username: Joi.string().min(3).max(15).required(),
+    password: Joi.string().min(3).max(15).required()
   }
 }
 
