@@ -13,7 +13,7 @@ const route = router => {
       const options = {
         method: 'POST',
         // url: `${req.php}/mock-validate-user`,
-        url: `${config.upstream}/login`,
+        url: `${config.upstream}/validate-user`,
         body: {
           username: req.body.username,
           password: req.body.password
