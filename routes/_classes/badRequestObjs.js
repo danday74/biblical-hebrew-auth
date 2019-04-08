@@ -7,11 +7,11 @@ const badRequestObjs = [
   },
   {
     testName: 'username is too short',
-    credentials: {username: 'short', password: Imp.VALID_PASSWORD}
+    credentials: {username: 'st', password: Imp.VALID_PASSWORD}
   },
   {
     testName: 'username is too long',
-    credentials: {username: 'thisusernameisfarfartoolong', password: Imp.VALID_PASSWORD}
+    credentials: {username: 'usernameissolong', password: Imp.VALID_PASSWORD}
   },
   {
     testName: 'username contains non alphanumeric chars',
@@ -23,11 +23,11 @@ const badRequestObjs = [
   },
   {
     testName: 'password is too short',
-    credentials: {username: Imp.VALID_USERNAME, password: 'short'}
+    credentials: {username: Imp.VALID_USERNAME, password: 'st'}
   },
   {
     testName: 'password is too long',
-    credentials: {username: Imp.VALID_USERNAME, password: 'thispasswordisfarfartoolong'}
+    credentials: {username: Imp.VALID_USERNAME, password: 'passwordissolong'}
   },
   {
     testName: 'password contains non alphanumeric chars',

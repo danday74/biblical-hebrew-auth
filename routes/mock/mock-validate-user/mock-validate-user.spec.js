@@ -22,7 +22,7 @@ describe('/mock-validate-user', () => {
 
       Imp.agent
         .post('/mock-validate-user')
-        .send({username: 'nonexistentusername', password: Imp.VALID_PASSWORD})
+        .send({username: 'nonexistentuser', password: Imp.VALID_PASSWORD})
         .expect(401, err => {
           done(err)
         })
