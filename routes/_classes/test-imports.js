@@ -1,8 +1,8 @@
-const cfg = require(appRoot + '/authServer.config')
+const cfg = require(appRoot + '/config')
 
 // agent
+const server = require(appRoot + '/server').http // or https
 const supertest = require('supertest')
-const server = require(appRoot + '/authServer').http // or https
 const agent = supertest.agent(server)
 
 // expect

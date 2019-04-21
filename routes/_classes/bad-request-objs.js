@@ -1,4 +1,4 @@
-const Imp = require('./TestImports')
+const Imp = require('./test-imports')
 
 const badRequestObjs = [
   {

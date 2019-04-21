@@ -1,11 +1,15 @@
 [
   {
+    "url": "/create-user",
+    "method": "POST"
+  },
+  {
     "url": "/login",
     "method": "POST"
   },
   {
-    "url": "/questions-questions-requested",
-    "method": "GET"
+    "url": "/recaptcha/siteverify",
+    "method": "POST"
   },
   {
     "url": "/user-exists/",

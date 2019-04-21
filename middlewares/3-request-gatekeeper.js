@@ -1,11 +1,12 @@
-const {find} = require('lodash')
+const config = require('../config')
+const jsonResponse = require(appRoot + '/routes/_classes/json-response')
 const jwt = require('jsonwebtoken')
-const config = require('../authServer.config')
-const NO_AUTH_REQUIRED_URLS = require('./no-auth-required-urls')
+const noAuthRequiredUrls = require('./no-auth-required-urls')
+const {find} = require('lodash')
 
 const middleware = (req, res, next) => {
 
-  const noAuthRequiredUrl = find(NO_AUTH_REQUIRED_URLS, noAuthRequiredUrl => {
+  const noAuthRequiredUrl = find(noAuthRequiredUrls, noAuthRequiredUrl => {
     return req.url.startsWith(noAuthRequiredUrl.url) && noAuthRequiredUrl.method === req.method
   })
   if (noAuthRequiredUrl) return next()
@@ -17,12 +18,12 @@ const middleware = (req, res, next) => {
   const token = req.cookies[config.jwt.cookieName]
 
   if (!token) {
-    return res.sendStatus(401)
+    return jsonResponse(res, 401)
   }
 
   jwt.verify(token, config.jwt.secret, err => {
     if (err) {
-      return res.sendStatus(401)
+      return jsonResponse(res, 401)
     } else {
       return next()
     }

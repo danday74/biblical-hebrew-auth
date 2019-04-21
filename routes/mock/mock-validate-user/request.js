@@ -1,3 +1,4 @@
+const jsonResponse = require(appRoot + '/routes/_classes/json-response')
 const users = require('./users')
 const validator = require('./validator')
 
@@ -18,7 +19,7 @@ const route = router => {
         delete userclone.password
         return res.status(200).json(userclone)
       } else {
-        return res.sendStatus(401)
+        return jsonResponse(res, 401)
       }
     })
 }

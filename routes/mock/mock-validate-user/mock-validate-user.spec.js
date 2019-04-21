@@ -1,5 +1,5 @@
-const badRequestObjs = require(appRoot + '/routes/_classes/badRequestObjs')
-const Imp = require(appRoot + '/routes/_classes/TestImports')
+const badRequestObjs = require(appRoot + '/routes/_classes/bad-request-objs')
+const Imp = require(appRoot + '/routes/_classes/test-imports')
 
 describe('/mock-validate-user', () => {
 

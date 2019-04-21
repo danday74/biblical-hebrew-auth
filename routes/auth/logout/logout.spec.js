@@ -1,7 +1,7 @@
+const cfg = require('../../../config')
+const Imp = require(appRoot + '/routes/_classes/test-imports')
 const moment = require('moment')
-const Imp = require(appRoot + '/routes/_classes/TestImports')
 const Nock = require('nock')
-const cfg = require('../../../authServer.config')
 
 describe('/logout', () => {
 

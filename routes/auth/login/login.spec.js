@@ -1,10 +1,10 @@
+const badRequestObjs = require(appRoot + '/routes/_classes/bad-request-objs')
+const cfg = require('../../../config')
+const Imp = require(appRoot + '/routes/_classes/test-imports')
 const jwt = require('jsonwebtoken')
 const moment = require('moment')
-const badRequestObjs = require(appRoot + '/routes/_classes/badRequestObjs')
-const Imp = require(appRoot + '/routes/_classes/TestImports')
-const restrictedUser = require(appRoot + '/test/utdata/auth/whoami/restrictedUser.json')
 const Nock = require('nock')
-const cfg = require('../../../authServer.config')
+const restrictedUser = require(appRoot + '/test/utdata/auth/whoami/restricted-user.json')
 
 describe('/login', () => {
 

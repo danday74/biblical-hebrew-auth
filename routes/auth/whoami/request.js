@@ -1,6 +1,6 @@
+const config = require(appRoot + '/config')
+const getRestrictedUser = require(appRoot + '/routes/_classes/get-restricted-user')
 const jwt = require('jsonwebtoken')
-const config = require(appRoot + '/authServer.config')
-const getRestrictedUser = require(appRoot + '/routes/_classes/getRestrictedUser')
 const validator = require('./validator')
 
 const route = router => {

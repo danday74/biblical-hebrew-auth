@@ -1,15 +1,15 @@
 require('./test/server.bootstrap')
 
-const bodyParser = require('body-parser')
-const cookieParser = require('cookie-parser')
 const express = require('express')
 const app = express()
 const router = express.Router()
+const bodyParser = require('body-parser')
+const config = require('./config')
+const cookieParser = require('cookie-parser')
 const globby = require('globby')
+const Logger = require('./js/logger')
 const proxy = require('express-http-proxy')
-const config = require('./authServer.config')
-const Logger = require('./js/Logger')
-const ServerCreator = require('./js/ServerCreator')
+const ServerCreator = require('./js/server-creator')
 
 const serverCreator = new ServerCreator(app)
 const httpServer = serverCreator.createHttpServer()
@@ -23,6 +23,7 @@ app.use(cookieParser())
 app.use(require('./middlewares/1-request-logger'))
 app.use(require('./middlewares/2-request-vars'))
 app.use(require('./middlewares/3-request-gatekeeper'))
+app.use(require('./middlewares/4-request-no-cache'))
 
 globby([`${appRoot}/routes/auth/**/request.js`]).then(paths => {
   paths.forEach(path => {

@@ -1,6 +1,6 @@
 const appRoot = require('app-root-path')
 const child = require('child_process')
-const config = require('./authServer.config')
+const config = require('./config')
 
 let cmd = appRoot + '/node_modules/.bin/istanbul cover -x "**/*.spec.js" ./node_modules/mocha/bin/_mocha -- js routes/auth'
 

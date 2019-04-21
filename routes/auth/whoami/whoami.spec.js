@@ -1,7 +1,7 @@
-const Imp = require(appRoot + '/routes/_classes/TestImports')
-const restrictedUser = require(appRoot + '/test/utdata/auth/whoami/restrictedUser.json')
+const cfg = require('../../../config')
+const Imp = require(appRoot + '/routes/_classes/test-imports')
 const Nock = require('nock')
-const cfg = require('../../../authServer.config')
+const restrictedUser = require(appRoot + '/test/utdata/auth/whoami/restricted-user.json')
 
 describe('/whoami', () => {
 

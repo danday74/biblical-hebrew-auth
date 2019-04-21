@@ -1,6 +1,6 @@
 const chai = require('chai')
 const expect = chai.expect
-const Logger = require('./Logger')
+const Logger = require('./logger')
 
 describe('Logger', () => {
 

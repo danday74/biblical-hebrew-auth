@@ -1,5 +1,5 @@
-const config = require('../authServer.config')
-const Logger = require('../js/Logger')
+const config = require('../config')
+const Logger = require('../js/logger')
 
 const middleware = (req, res, next) => {
 

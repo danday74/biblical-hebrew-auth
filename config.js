@@ -15,7 +15,8 @@ const config = {
   timeout: {
     upstream: 9000
   },
-  upstream: 'http://localhost:4002'
+  upstream: 'http://localhost:4002',
+  usernameAndPasswordRegex: /^[a-zA-Z0-9\u0590-\u05FF]{3,15}$/
 }
 
 module.exports = config

@@ -1,7 +1,7 @@
-const Imp = require(appRoot + '/routes/_classes/TestImports')
-const supertest = require('supertest')
+const cfg = require('../../../config')
+const Imp = require(appRoot + '/routes/_classes/test-imports')
 const Nock = require('nock')
-const cfg = require('../../../authServer.config')
+const supertest = require('supertest')
 
 describe('/authenticated', () => {
 
@@ -95,7 +95,7 @@ describe('/authenticated', () => {
 
     it('should respond 401 where JWT cookie is invalid', done => {
 
-      const server = require(appRoot + '/authServer').http
+      const server = require(appRoot + '/server').http
       const agent1 = supertest.agent(server)
       const agent2 = supertest.agent(server)
       const agent3 = supertest.agent(server)

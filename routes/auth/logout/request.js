@@ -1,4 +1,5 @@
-const config = require(appRoot + '/authServer.config')
+const config = require(appRoot + '/config')
+const jsonResponse = require(appRoot + '/routes/_classes/json-response')
 const validator = require('./validator')
 
 const route = router => {
@@ -10,7 +11,7 @@ const route = router => {
         httpOnly: true,
         secure: req.secure
       })
-      return res.sendStatus(200)
+      return jsonResponse(res, 200)
     })
 }
 
