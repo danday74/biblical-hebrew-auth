@@ -1,6 +1,5 @@
-Auth server
-===========
+# Biblical Hebrew Auth
 
-**JWT auth server**
+**A JWT authentication proxy for Biblical Hebrew**
 
 ![alt text](auth-server-drawio.png "Authentication server architecture")
