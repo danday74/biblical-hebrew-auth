@@ -10,7 +10,9 @@
     "test": "node conditional-test",
     "enforcer": "./node_modules/.bin/istanbul check-coverage --statement 100 --branch 100 --function 100 --line 100",
     "eslint": "eslint **/*.js --ignore-pattern coverage",
-    "build": "npm-run-all test enforcer eslint"
+    "build": "npm-run-all test enforcer eslint",
+    "lint": "npm run eslint",
+    "husky": "npm run build"
   },
   "dependencies": {
     "app-root-path": "^2.2.1",
@@ -43,7 +45,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run build"
+      "pre-push": "npm run husky"
     }
   }
 }
