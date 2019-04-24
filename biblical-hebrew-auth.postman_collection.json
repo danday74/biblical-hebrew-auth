@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "ada67d14-82a7-4449-a75b-a97221177ec1",
-		"name": "auth-server",
+		"name": "biblical-hebrew-auth",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -17,7 +17,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\": \"Guest\",\n  \"password\": \"test\"\n}\n"
+					"raw": "{\n  \"username\": \"Guest888\",\n  \"password\": \"Yeshua\"\n}\n"
 				},
 				"url": {
 					"raw": "http://localhost:4001/login",
@@ -91,7 +91,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\": \"Guest\",\n  \"password\": \"test\"\n}\n"
+					"raw": "{\n  \"username\": \"Guest888\",\n  \"password\": \"Yeshua\"\n}\n"
 				},
 				"url": {
 					"raw": "http://localhost:4001/mock-validate-user",

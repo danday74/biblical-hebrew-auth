@@ -7,7 +7,7 @@ const badRequestObjs = [
   },
   {
     testName: 'username is too short',
-    credentials: {username: 'st', password: Imp.VALID_PASSWORD}
+    credentials: {username: 'short', password: Imp.VALID_PASSWORD}
   },
   {
     testName: 'username is too long',
@@ -23,7 +23,7 @@ const badRequestObjs = [
   },
   {
     testName: 'password is too short',
-    credentials: {username: Imp.VALID_USERNAME, password: 'st'}
+    credentials: {username: Imp.VALID_USERNAME, password: 'short'}
   },
   {
     testName: 'password is too long',

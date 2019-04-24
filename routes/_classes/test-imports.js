@@ -15,8 +15,8 @@ const using = require('data-driven')
 
 // custom
 const user = require(appRoot + '/test/utdata/auth/login/user.json')
-const VALID_USERNAME = 'Guest'
-const VALID_PASSWORD = 'test'
+const VALID_USERNAME = 'Guest888'
+const VALID_PASSWORD = 'Yeshua'
 const VALID_CREDENTIALS = {
   username: VALID_USERNAME,
   password: VALID_PASSWORD
