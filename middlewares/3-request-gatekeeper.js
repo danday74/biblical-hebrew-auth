@@ -2,8 +2,8 @@ const config = require('../config')
 const jsonResponse = require(appRoot + '/routes/_classes/json-response')
 const jwt = require('jsonwebtoken')
 const noAuthRequiredUrls = require('./no-auth-required-urls')
-const {find} = require('lodash')
 const nodeAtob = require('../routes/_classes/node-atob')
+const {find} = require('lodash')
 
 const middleware = (req, res, next) => {
 

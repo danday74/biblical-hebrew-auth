@@ -4,8 +4,8 @@ const Imp = require(appRoot + '/routes/_classes/test-imports')
 const jwt = require('jsonwebtoken')
 const moment = require('moment')
 const Nock = require('nock')
-const restrictedUser = require(appRoot + '/test/utdata/auth/whoami/restricted-user.json')
 const nodeAtob = require('../../_classes/node-atob')
+const restrictedUser = require(appRoot + '/test/utdata/auth/whoami/restricted-user.json')
 
 describe('/login', () => {
 

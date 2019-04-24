@@ -1,8 +1,8 @@
 const config = require(appRoot + '/config')
 const getRestrictedUser = require(appRoot + '/routes/_classes/get-restricted-user')
 const jwt = require('jsonwebtoken')
-const validator = require('./validator')
 const nodeAtob = require('../../_classes/node-atob')
+const validator = require('./validator')
 
 const route = router => {
   router.route('/whoami')
