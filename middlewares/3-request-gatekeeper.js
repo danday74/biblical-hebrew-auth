@@ -3,6 +3,7 @@ const jsonResponse = require(appRoot + '/routes/_classes/json-response')
 const jwt = require('jsonwebtoken')
 const noAuthRequiredUrls = require('./no-auth-required-urls')
 const {find} = require('lodash')
+const nodeAtob = require('../routes/_classes/node-atob')
 
 const middleware = (req, res, next) => {
 
@@ -21,7 +22,7 @@ const middleware = (req, res, next) => {
     return jsonResponse(res, 401)
   }
 
-  jwt.verify(token, config.jwt.secret, err => {
+  jwt.verify(token, nodeAtob(config.jwt.secret), err => {
     if (err) {
       return jsonResponse(res, 401)
     } else {

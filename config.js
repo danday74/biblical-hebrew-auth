@@ -8,7 +8,7 @@ const config = {
   jwt: {
     cookieName: 'twj',
     expiresIn: 86400, // 24 hours
-    secret: 'FLEDFRINTSTONE'
+    secret: 'SkVTVVNJU0xPUkQ='
   },
   mockValidateUserEnabled: false,
   nockHost: 'localhost',

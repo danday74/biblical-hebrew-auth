@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken')
 const moment = require('moment')
 const Nock = require('nock')
 const restrictedUser = require(appRoot + '/test/utdata/auth/whoami/restricted-user.json')
+const nodeAtob = require('../../_classes/node-atob')
 
 describe('/login', () => {
 
@@ -79,7 +80,7 @@ describe('/login', () => {
           const jwtCookieObj = Imp.cookie.parse(jwtCookieStr)
           const token = jwtCookieObj[Imp.cfg.jwt.cookieName]
 
-          jwt.verify(token, Imp.cfg.jwt.secret, (err, decoded) => {
+          jwt.verify(token, nodeAtob(Imp.cfg.jwt.secret), (err, decoded) => {
 
             if (err) done(err)
 

@@ -1,12 +1,13 @@
 const config = require(appRoot + '/config')
 const getRestrictedUser = require(appRoot + '/routes/_classes/get-restricted-user')
 const jwt = require('jsonwebtoken')
+const nodeAtob = require('./node-atob')
 
 const setCookie = (req, res, response) => {
 
   const user = response.body
 
-  const token = jwt.sign(user, config.jwt.secret, {
+  const token = jwt.sign(user, nodeAtob(config.jwt.secret), {
     expiresIn: config.jwt.expiresIn
   })
   res.cookie(config.jwt.cookieName, token, {
